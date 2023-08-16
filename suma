@@ -1,0 +1,17 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float digito1,digito2,suma;
+    cout<<"Calculadora de Sumas"<<endl;
+    cout<<"Introducir el primer digito: ";
+    cin>>digito1;
+    cout<<"Introducir el segundo digito: ";
+    cin>>digito2;
+    suma=digito1+digito2 ;
+    cout<<"El resultado de la suma es: "<<suma;
+
+    return 0;
+}
