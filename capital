@@ -12,8 +12,9 @@ int main()
     cin>>TazaInteres;
     cout<<"Introducir el tiempo: ";
     cin>>Tiempo;
-    resultado=pow(1+TazaInteres,Tiempo)*Capital ;
-    cout<<"El resultado de capital final es: "<<resultado;
+    resultado=(pow(1+TazaInteres,Tiempo)*Capital)-Capital ;
+    
+    cout<<"El interes compuesto del capital es: "<<resultado;
     
     return 0;
 }
