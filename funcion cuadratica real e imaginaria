@@ -1,0 +1,29 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+    float a,b,c,D,xR,xi;
+    cout<<"FORMULA CUADRATICA"<<endl;
+    cout<<"Ingrese el valor de a: "<<endl;
+    cin>>a;
+    cout<<"Ingrese el valor de b: "<<endl;
+    cin>>b;
+    cout<<"Ingrese el valor de c: "<<endl;
+    cin>>c;
+    D=b*b-4*a*c;
+    if (D<0) {
+        xR=-b/(2*a);
+        xi=sqrt(-D) / (2*a);
+    cout<<"El valor es: "<<xR<<"+"<<xi<<"i"<<endl;
+    cout<<"El valor es: "<<xR<<"-"<<xi<<"i"<<endl;
+    }
+    else {
+        cout<<"Los valores no son imaginarios"<<endl;
+    }
+    
+
+    return 0;
+}
