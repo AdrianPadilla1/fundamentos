@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    int promedio,numero1,numero2;
+    float promedio,numero1,numero2;
     cout<<"CALCULADORA DE PROMEDIO"<<endl;
     cout<<"Ingresar el primer numero: "<<endl;
     cin>>numero1;
