@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int promedio,numero1,numero2;
+    cout<<"CALCULADORA DE PROMEDIO"<<endl;
+    cout<<"Ingresar el primer numero: "<<endl;
+    cin>>numero1;
+    cout<<"Ingresar el segundo numero: "<<endl;
+    cin>>numero2;
+    promedio=numero1+numero2;
+    cout<<"Ingresar el tercer numero: "<<endl;
+    cin>>numero1;
+    cout<<"Ingresar el cuarto numero: "<<endl;
+    cin>>numero2;
+    promedio=promedio+numero1+numero2;
+    cout<<"Ingresar el quinto numero: "<<endl;
+    cin>>numero1;
+    promedio=(promedio+numero1)/5;
+    cout<<"El resultado es: "<<promedio<<endl;
+
+    return 0;
+}
