@@ -1,0 +1,33 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    double x1, y1, x2, y2, x3, y3;
+    
+    // Ingresa las coordenadas de los tres puntos
+    cout << "Ingresa las coordenadas del primer punto (x y): ";
+    cin >> x1 >> y1;
+    cout << "Ingresa las coordenadas del segundo punto (x y): ";
+    cin >> x2 >> y2;
+    cout << "Ingresa las coordenadas del tercer punto (x y): ";
+    cin >> x3 >> y3;
+    
+    // Calcula los lados del triángulo formado por los puntos
+    double a = sqrt((x2 - x1)*(x2 - x1) + (y2 - y1)*(y2 - y1));
+    double b = sqrt((x3 - x2)*(x3 - x2) + (y3 - y2)*(y3 - y2));
+    double c = sqrt((x1 - x3)*(x1 - x3) + (y1 - y3)*(y1 - y3));
+    
+    // Calcula el radio del círculo circunscrito
+    double radio = (a * b * c) / sqrt((a + b + c) * (b + c - a) * (c + a - b) * (a + b - c));
+    
+    // Calcula las coordenadas del centro del círculo circunscrito
+    double centro_x = ((x1 * y2 + x2 * y3 + x3 * y1 - x1 * y3 - x2 * y1 - x3 * y2) / (2 * (x1 * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 - y2))));
+    double centro_y = ((x1 * x1 + y1 * y1 - x2 * x2 - y2 * y2) / (2 * (y1 - y2)) - centro_x * (x1 - x2) / (y1 - y2));
+    
+    cout << "El radio del círculo circunscrito es: " << radio << endl;
+    cout << "Las coordenadas del centro del círculo circunscrito son: (" << centro_x << ", " << centro_y << ")" << endl;
+    
+    return 0;
+}
