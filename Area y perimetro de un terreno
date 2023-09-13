@@ -1,0 +1,17 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float lado,area,perimetro;
+    cout<<"AREA Y PERIMETRO DE UN TERRENO";
+    cout<<"Ingrese el lado del terreno: "<<endl;
+    cin>>lado;
+    
+    area=lado*lado;
+    perimetro=lado+lado+lado+lado;
+    cout<<"El area del terreno es: "<<area<<endl;
+    cout<<"El perimetro del terreno es: "<<perimetro;
+    return 0;
+}
