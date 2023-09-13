@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int gine,pedia,trauma,presupuesto;
+    do {
+    cout<<"HOSPITAL"<<endl;
+    cout<<"Introduzca el presupuesto total: "<<endl;
+    cin>>presupuesto;
+    } while (presupuesto<=0) ;
+    
+    gine=presupuesto*0.20;
+    pedia=presupuesto*0.40;
+    trauma=presupuesto*0.40;
+    cout<<"El presupuesto para ginecologia es: "<<gine<<endl;
+    cout<<"El presupuesto para pediatria es: "<<pedia<<endl;
+    cout<<"El presupuesto para traumatologia es: "<<trauma<<endl;
+
+    return 0;
+}
