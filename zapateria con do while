@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float precioz,cantidadz,total,pagar;
+    cout<<"ZAPATOS"<<endl;
+    do {
+    cout<<"Ingrese la cantidad de zapatos por par: "<<endl;
+    cin>>cantidadz;
+    } while (cantidadz<=0) ;
+    cout<<"Ingrese el precio del zapato: "<<endl;
+    cin>>precioz;
+    
+    total=cantidadz*precioz;
+    
+    if (cantidadz>=3) {
+        pagar=total-(total*0.3);
+        cout<<"El total a pagar es: "<<pagar<<endl;
+    } else {
+        pagar=total-(total*0.5);
+        cout<<"El total a pagar es: "<<pagar<<endl;
+    }
+
+    return 0;
+}
