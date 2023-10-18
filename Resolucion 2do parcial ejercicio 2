@@ -1,0 +1,18 @@
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    float p, d,d1, t; //precio,descuento,descuento porcentuado,total.
+    cout << "COSTO CON DESCUENTO" << endl;
+    cout << "Introduzca el precio: " << endl;
+    cin >> p;
+    cout << "Introduzca el descuento a aplicar: " << endl;
+    cin >> d;
+
+    d1 = d / 100;
+    t = p - (p * d1);
+    cout << "El precio a pagar con descuento es: " << t << endl;
+    return 0;
+}
