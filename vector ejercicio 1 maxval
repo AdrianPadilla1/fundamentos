@@ -1,0 +1,31 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int main()
+{
+    vector <int> vec;
+    
+    int nelementos, valor;
+    do {
+        cout<<"Ingrese el numero de elementos "<<endl;
+    cin>>nelementos;
+    } while (nelementos<=0);
+    
+    cout<<"Ingrese el/los "<<nelementos<<" enteros: ";
+    for (int i=0;i<=nelementos;i++) {
+    cin>>valor;
+    vec.push_back(valor);
+    }
+    int maxval=vec[0];
+    for (int num : vec){
+        if (num>maxval) {
+        maxval=num;
+    }
+    }
+    cout<<"El valor mayor es: "<<maxval<<endl;
+    
+
+    return 0;
+}
